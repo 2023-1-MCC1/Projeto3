@@ -1,0 +1,309 @@
+[gd_scene load_steps=13 format=3 uid="uid://broqbq3t1i0el"]
+
+[ext_resource type="Texture2D" uid="uid://by43kfnqfhx3m" path="res://Images/Tribunal.jpg" id="1_61t04"]
+[ext_resource type="Script" path="res://Tribunal.cs" id="1_ghiq4"]
+[ext_resource type="Texture2D" uid="uid://dibuc5uulv1x3" path="res://Sprite/spriteAlinhado_strip9.png" id="2_f204v"]
+[ext_resource type="Texture2D" uid="uid://dnktenhpdadx7" path="res://Sprite/Márcia.png" id="3_naffl"]
+[ext_resource type="Texture2D" uid="uid://26e2yoslgmhl" path="res://Images/Captura de tela 2023-05-26 185052.png" id="4_dry1n"]
+[ext_resource type="FontFile" uid="uid://83bty0s0ovon" path="res://fonte/Retro Gaming.ttf" id="5_oiabl"]
+[ext_resource type="Script" path="res://RichTextLabel7.cs" id="6_lrd3i"]
+[ext_resource type="Texture2D" uid="uid://bq4b1lbqe2hm4" path="res://Images/sta.png" id="7_ugfgf"]
+[ext_resource type="FontFile" uid="uid://bvx7c0t5ocmd7" path="res://fonte/Fipps-Regular.otf" id="8_nl8xc"]
+
+[sub_resource type="Animation" id="Animation_ydory"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/Tribunal:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(964.827, 549.188)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimationPlayer/Tribunal:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.355822, 0.355822)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimationPlayer/SpriteAlinhadoStrip9:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(965, 1162)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("AnimationPlayer/SpriteAlinhadoStrip9:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2.32857, 2.32857)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("AnimationPlayer/SpriteAlinhadoStrip9:frame")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("AnimationPlayer/Márcia:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(959, 542)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("AnimationPlayer/Márcia:scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1.53571, 1.53571)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("AnimationPlayer/CapturaDeTela2023-05-26185052:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(958.172, 576.479)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("AnimationPlayer/CapturaDeTela2023-05-26185052:scale")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.200893, 0.200893)]
+}
+
+[sub_resource type="Animation" id="Animation_uf4gx"]
+resource_name = "Tribunal"
+length = 8.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/Tribunal:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 4, 8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(964.827, 549.188), Vector2(964.827, 549.188), Vector2(978, 596)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimationPlayer/Tribunal:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 4, 8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.355822, 0.355822), Vector2(0.355822, 0.355822), Vector2(0.444545, 0.444545)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimationPlayer/SpriteAlinhadoStrip9:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 4, 8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(965, 1162), Vector2(961.965, 880), Vector2(972, 1008)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("AnimationPlayer/SpriteAlinhadoStrip9:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 4, 8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(2.32857, 2.32857), Vector2(2.32857, 2.32857), Vector2(2.87857, 2.87857)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("AnimationPlayer/SpriteAlinhadoStrip9:frame")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("AnimationPlayer/Márcia:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 4, 8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(958, 532), Vector2(958, 532), Vector2(968, 575)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("AnimationPlayer/Márcia:scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 4, 8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1.875, 1.875), Vector2(1.875, 1.875), Vector2(2.45536, 2.45536)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("AnimationPlayer/CapturaDeTela2023-05-26185052:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 4, 8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(958.172, 576.479), Vector2(958.172, 576.479), Vector2(971, 630.404)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("AnimationPlayer/CapturaDeTela2023-05-26185052:scale")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 4, 8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.200893, 0.200893), Vector2(0.200893, 0.200893), Vector2(0.258674, 0.258674)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_0g6b2"]
+_data = {
+"RESET": SubResource("Animation_ydory"),
+"Tribunal": SubResource("Animation_uf4gx")
+}
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_ghiq4")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "Tribunal"
+libraries = {
+"": SubResource("AnimationLibrary_0g6b2")
+}
+
+[node name="Tribunal" type="Sprite2D" parent="AnimationPlayer"]
+position = Vector2(964.827, 549.188)
+scale = Vector2(0.355822, 0.355822)
+texture = ExtResource("1_61t04")
+
+[node name="SpriteAlinhadoStrip9" type="Sprite2D" parent="AnimationPlayer"]
+position = Vector2(965, 1162)
+scale = Vector2(2.32857, 2.32857)
+texture = ExtResource("2_f204v")
+hframes = 9
+frame = 1
+
+[node name="Márcia" type="Sprite2D" parent="AnimationPlayer"]
+position = Vector2(959, 542)
+scale = Vector2(1.53571, 1.53571)
+texture = ExtResource("3_naffl")
+
+[node name="CapturaDeTela2023-05-26185052" type="Sprite2D" parent="AnimationPlayer"]
+position = Vector2(958.172, 576.479)
+scale = Vector2(0.200893, 0.200893)
+texture = ExtResource("4_dry1n")
+
+[node name="ColorRect" type="ColorRect" parent="AnimationPlayer"]
+offset_left = 371.0
+offset_top = 45.0
+offset_right = 1573.0
+offset_bottom = 263.0
+color = Color(0, 0, 0, 0.611765)
+
+[node name="RichTextLabel7" type="RichTextLabel" parent="AnimationPlayer"]
+offset_left = 373.0
+offset_top = 46.0
+offset_right = 1571.0
+offset_bottom = 264.0
+size_flags_horizontal = 3
+size_flags_vertical = 10
+theme_override_fonts/normal_font = ExtResource("5_oiabl")
+theme_override_font_sizes/normal_font_size = 50
+text = "TEXTO"
+scroll_following = true
+tab_size = 8
+script = ExtResource("6_lrd3i")
+
+[node name="Sta" type="Sprite2D" parent="AnimationPlayer"]
+position = Vector2(407, 235)
+rotation = 1.5708
+scale = Vector2(0.0670409, 0.0670409)
+texture = ExtResource("7_ugfgf")
+
+[node name="Label" type="Label" parent="AnimationPlayer"]
+offset_left = 437.0
+offset_top = 222.0
+offset_right = 626.0
+offset_bottom = 255.0
+theme_override_fonts/font = ExtResource("8_nl8xc")
+theme_override_font_sizes/font_size = 12
+text = "ESPAÇO PARA PULAR"
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

@@ -1,0 +1,312 @@
+[gd_scene load_steps=13 format=3 uid="uid://b67r0vbrj117i"]
+
+[ext_resource type="Texture2D" uid="uid://b4f8ja1t04nub" path="res://Images/office011.png" id="1_hs0ly"]
+[ext_resource type="Script" path="res://Transicao.cs" id="1_i706l"]
+[ext_resource type="Texture2D" uid="uid://cfrqc1oa2srt6" path="res://Sprite/Seg1/Direita/Download12289.png" id="2_epht0"]
+[ext_resource type="Texture2D" uid="uid://b04mcahgkdyh" path="res://Sprite/Seg2/Esquerda/EsquerdaSeg2.png" id="3_3srya"]
+[ext_resource type="Texture2D" uid="uid://bktd1p7op1mc6" path="res://Sprite/AlinhadoB_strip9.png" id="4_xwcjl"]
+[ext_resource type="FontFile" uid="uid://83bty0s0ovon" path="res://fonte/Retro Gaming.ttf" id="5_m6cma"]
+[ext_resource type="Script" path="res://RichTextLabel5.cs" id="6_62xre"]
+[ext_resource type="FontFile" uid="uid://bvx7c0t5ocmd7" path="res://fonte/Fipps-Regular.otf" id="7_k1b3p"]
+[ext_resource type="Texture2D" uid="uid://bq4b1lbqe2hm4" path="res://Images/sta.png" id="8_iwbe6"]
+
+[sub_resource type="Animation" id="Animation_r6kgd"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(965, -175)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(10.7251, 10.7251)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../Download12289:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(811.927, 575.25)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../Download12289:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(4.31897, 4.31897)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../EsquerdaSeg2:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1157, 566)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("../EsquerdaSeg2:scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(4.13281, 4.13281)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("../AlinhadoBStrip9:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(950, -89)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("../AlinhadoBStrip9:scale")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(4.26535, 4.26535)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("../AlinhadoBStrip9:frame")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_hms4v"]
+resource_name = "transition"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(965, -175)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(10.7251, 10.7251)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../Download12289:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(811.927, 575.25)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../Download12289:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(4.31897, 4.31897)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../EsquerdaSeg2:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1157, 566)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("../EsquerdaSeg2:scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(4.13281, 4.13281)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("../AlinhadoBStrip9:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 2.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(950, -89), Vector2(950, 316)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("../AlinhadoBStrip9:scale")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(4.26535, 4.26535)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("../AlinhadoBStrip9:frame")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 2.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8, 0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3r6n4"]
+_data = {
+"RESET": SubResource("Animation_r6kgd"),
+"transition": SubResource("Animation_hms4v")
+}
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_i706l")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("Office011")
+autoplay = "transition"
+libraries = {
+"": SubResource("AnimationLibrary_3r6n4")
+}
+
+[node name="Office011" type="Sprite2D" parent="AnimationPlayer"]
+position = Vector2(965, -175)
+scale = Vector2(10.7251, 10.7251)
+texture = ExtResource("1_hs0ly")
+
+[node name="Download12289" type="Sprite2D" parent="AnimationPlayer"]
+position = Vector2(811.927, 575.25)
+scale = Vector2(4.31897, 4.31897)
+texture = ExtResource("2_epht0")
+hframes = 9
+
+[node name="EsquerdaSeg2" type="Sprite2D" parent="AnimationPlayer"]
+position = Vector2(1157, 566)
+scale = Vector2(4.13281, 4.13281)
+texture = ExtResource("3_3srya")
+hframes = 9
+
+[node name="AlinhadoBStrip9" type="Sprite2D" parent="AnimationPlayer"]
+position = Vector2(950, -89)
+scale = Vector2(4.26535, 4.26535)
+texture = ExtResource("4_xwcjl")
+hframes = 9
+frame = 1
+
+[node name="ColorRect" type="ColorRect" parent="AnimationPlayer"]
+offset_left = 318.0
+offset_top = 785.0
+offset_right = 1520.0
+offset_bottom = 1003.0
+color = Color(0, 0, 0, 0.513726)
+
+[node name="RichTextLabel5" type="RichTextLabel" parent="AnimationPlayer"]
+offset_left = 319.0
+offset_top = 783.0
+offset_right = 1517.0
+offset_bottom = 1001.0
+size_flags_horizontal = 3
+size_flags_vertical = 10
+theme_override_fonts/normal_font = ExtResource("5_m6cma")
+theme_override_font_sizes/normal_font_size = 50
+text = "TEXTO"
+scroll_following = true
+tab_size = 8
+script = ExtResource("6_62xre")
+
+[node name="Label" type="Label" parent="AnimationPlayer"]
+offset_left = 383.0
+offset_top = 966.0
+offset_right = 572.0
+offset_bottom = 999.0
+theme_override_fonts/font = ExtResource("7_k1b3p")
+theme_override_font_sizes/font_size = 12
+text = "ESPAÇO PARA PULAR"
+
+[node name="Sta" type="Sprite2D" parent="AnimationPlayer"]
+position = Vector2(361, 978)
+rotation = 1.5708
+scale = Vector2(0.0670409, 0.0670409)
+texture = ExtResource("8_iwbe6")
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

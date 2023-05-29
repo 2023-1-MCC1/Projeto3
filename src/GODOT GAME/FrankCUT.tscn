@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://e8nkcik18hro"]
+
+[ext_resource type="Script" path="res://FrankCUT.cs" id="1_pe2vl"]
+[ext_resource type="PackedScene" uid="uid://iypkpcamk2ly" path="res://animation_player.tscn" id="4_jkobs"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_pe2vl")
+
+[node name="AnimationPlayer" parent="." instance=ExtResource("4_jkobs")]
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

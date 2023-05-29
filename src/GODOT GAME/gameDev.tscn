@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://ccwvygs4xxu4b"]
+
+[ext_resource type="Texture2D" uid="uid://23rbk76xtqq4" path="res://Images/Captura de tela 2023-04-24 120757.png" id="1_mnrdq"]
+[ext_resource type="Script" path="res://gameDev.cs" id="1_nd673"]
+[ext_resource type="FontFile" uid="uid://bvx7c0t5ocmd7" path="res://fonte/Fipps-Regular.otf" id="3_baupd"]
+[ext_resource type="FontFile" uid="uid://cirqedk3p77pt" path="res://fonte/8-bit Arcade Out.ttf" id="4_og5ma"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_nd673")
+
+[node name="CapturaDeTela2023-04-24120757" type="Sprite2D" parent="."]
+position = Vector2(951.5, 538)
+scale = Vector2(32.0164, 40.2857)
+texture = ExtResource("1_mnrdq")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 1949.0
+offset_bottom = 1091.0
+theme_override_fonts/font = ExtResource("3_baupd")
+theme_override_font_sizes/font_size = 59
+text = "           Jogo em desenvolvimento
+
+                AGUARDE NOVIDADES!!"
+
+[node name="Button" type="Button" parent="."]
+offset_left = 675.0
+offset_top = 730.0
+offset_right = 1300.0
+offset_bottom = 871.0
+theme_override_fonts/font = ExtResource("4_og5ma")
+theme_override_font_sizes/font_size = 117
+text = "SAIR"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
