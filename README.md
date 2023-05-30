@@ -8,7 +8,7 @@
 
 ## Nome do Grupo : TRACKSUIT GAMES
 
-## Integrantes: Guilherme Alves de Oliveira e Oliveira, João Pedro Lima Paulo, Vitor Utimura Locateli, Gustavo Marcello
+## Integrantes: Guilherme Alves de Oliveira e Oliveira, João Pedro Lima Paulo, Vitor Utimura Locateli, Gustavo Marcello Correa de Araujo
 
 ## Professores Orientadores: Eduardo Savino, Renata Muniz Do Nascimento, Victor Bruno Alexander Rosetti de Quiroz, Fabiano Alves Onça, Jefferson de Oliveira Silva
 
@@ -20,12 +20,11 @@
 </p>
 
 
-De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
-<br><br>
-Meu projeto ajuda estudantes FECAP a configurarem seus githubs.
-<br><br>
-May the force be with you!
-<br><br>
+O jogo The Society foi um projeto da FECAP, onde foi proposto aos alunos a criação de um jogo por meio da GODOT ENGINE.
+
+  The society tem o intúito de fazer uma crítica às classes sociais, mostrando como as atuais sociedades controlam e mascaram tudo
+que realmente acontece.
+  Frank o personagem principal e vive nessa sociedade, faça o que é pedido, não duvide, não se pergunte, pois você está sob controle...
 
 ## 🛠 Estrutura de pastas
 
@@ -89,7 +88,7 @@ Descreva como instalar todas as dependências para desenvolvimento e como rodar 
 
 Para abrir este projeto você necessita das seguintes ferramentas:
 
--<a href="https://godotengine.org/download">GODOT</a>
+-<a href="https://godotengine.org/download">GODOT</a>, intale a versão 4.0.2 PARA O CORRETO FUNCIONAMENTO.
 
 ```sh
 make install
@@ -101,18 +100,7 @@ Coloque código do prompt de comnando se for necessário
 
 A cada atualização os detalhes devem ser lançados aqui.
 
-* 0.2.1 - 25/01/2022
-    * MUDANÇA: Atualização de docs (código do módulo permanece inalterado)
-* 0.2.0 - 15/01/2022
-    * MUDANÇA: Remove `setDefaultXYZ()`
-    * ADD: Adiciona `init()`
-* 0.1.1 - 11/01/2022
-    * CONSERTADO: Crash quando chama `baz()` (Obrigado @NomeDoContribuidorGeneroso!)
-* 0.1.0 - 10/01/2022
-    * O primeiro lançamento adequado
-    * MUDANÇA: Renomeia `foo()` para `bar()`
-* 0.0.1 - 01/01/2022
-    * Trabalho em andamento
+* 30/0/2023 Versão 0.9 - Jogo Finalizado, músicas estão sendo produzidas para inclusão do projeto 
 
 ## 📋 Licença/License
 
