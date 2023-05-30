@@ -1,4 +1,4 @@
-[gd_scene load_steps=89 format=3 uid="uid://bubhev3o318r4"]
+[gd_scene load_steps=88 format=3 uid="uid://bubhev3o318r4"]
 
 [ext_resource type="Texture2D" uid="uid://bufsd3843kily" path="res://Images/office01.png" id="1_7epnc"]
 [ext_resource type="Texture2D" uid="uid://vi5ron1fmytl" path="res://Images/6.png" id="2_om5lj"]
@@ -27,7 +27,6 @@
 [ext_resource type="Texture2D" uid="uid://xg1p2hf35bux" path="res://Images/background-remover/2. Pedro Paulo.png" id="19_8tqfe"]
 [ext_resource type="Script" path="res://Area2DEntrega6.cs" id="19_exwp0"]
 [ext_resource type="Script" path="res://Area2DCutFinal.cs" id="20_40tqs"]
-[ext_resource type="AudioStream" uid="uid://cltbyjwbyd1uj" path="res://Sound/Som ambiente Escritório - Trabalho - Office Sound-YoutubeConvert.cc.wav" id="21_ckcnq"]
 [ext_resource type="Texture2D" uid="uid://gr3il6x3ib5n" path="res://Images/background-remover/5. Tulio Magfic.png" id="21_forgo"]
 [ext_resource type="Texture2D" uid="uid://4ueu36utdlsu" path="res://Images/background-remover/4. Lionel Carpella.png" id="23_fh4ea"]
 [ext_resource type="Texture2D" uid="uid://dq5vsqryg0k0h" path="res://Images/background-remover/3. Francisco Paz.png" id="25_tl08j"]
@@ -634,11 +633,6 @@ script = ExtResource("20_40tqs")
 position = Vector2(970.5, 645.5)
 shape = SubResource("RectangleShape2D_gvn3b")
 disabled = true
-
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("21_ckcnq")
-volume_db = 2.787
-autoplay = true
 
 [connection signal="body_shape_entered" from="Area2D" to="CharacterBody2D" method="_on_area_2d_body_shape_entered"]
 [connection signal="body_entered" from="Area2DEntrega1" to="CharacterBody2D" method="_on_area_2d_entrega_1_body_entered"]

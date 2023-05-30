@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public partial class credit : Node2D
+public partial class GAMEOVER : Node2D
 {
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
@@ -13,6 +13,11 @@ public partial class credit : Node2D
 	{
 	}
 	private void _on_button_pressed()
+{
+	Global.time = 0;
+	GetTree().ChangeSceneToFile("res://Maze.tscn");
+}
+private void _on_button_2_pressed()
 {
 	Global.i=0;
 	Global.x=0;
@@ -42,6 +47,9 @@ public partial class credit : Node2D
 	GetTree().ChangeSceneToFile("res://TrackSuit.tscn");
 }
 
+
 }
+
+
 
 

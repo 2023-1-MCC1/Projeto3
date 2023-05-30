@@ -274,7 +274,7 @@ texture = ExtResource("4_dry1n")
 offset_left = 371.0
 offset_top = 45.0
 offset_right = 1573.0
-offset_bottom = 263.0
+offset_bottom = 288.0
 color = Color(0, 0, 0, 0.611765)
 
 [node name="RichTextLabel7" type="RichTextLabel" parent="AnimationPlayer"]
@@ -292,16 +292,16 @@ tab_size = 8
 script = ExtResource("6_lrd3i")
 
 [node name="Sta" type="Sprite2D" parent="AnimationPlayer"]
-position = Vector2(407, 235)
+position = Vector2(408, 259)
 rotation = 1.5708
 scale = Vector2(0.0670409, 0.0670409)
 texture = ExtResource("7_ugfgf")
 
 [node name="Label" type="Label" parent="AnimationPlayer"]
-offset_left = 437.0
-offset_top = 222.0
-offset_right = 626.0
-offset_bottom = 255.0
+offset_left = 440.0
+offset_top = 246.0
+offset_right = 629.0
+offset_bottom = 279.0
 theme_override_fonts/font = ExtResource("8_nl8xc")
 theme_override_font_sizes/font_size = 12
 text = "ESPAÇO PARA PULAR"

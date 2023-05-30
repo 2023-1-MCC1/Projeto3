@@ -1,9 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://crtn1ccqgv6oq"]
+[gd_scene load_steps=5 format=3 uid="uid://crtn1ccqgv6oq"]
 
 [ext_resource type="Script" path="res://TrackSuit.cs" id="1_fy6sv"]
 [ext_resource type="Texture2D" uid="uid://23rbk76xtqq4" path="res://Images/Captura de tela 2023-04-24 120757.png" id="2_s11na"]
 [ext_resource type="FontFile" uid="uid://cirqedk3p77pt" path="res://fonte/8-bit Arcade Out.ttf" id="4_eyj24"]
-[ext_resource type="AudioStream" uid="uid://bx67awo7eirm0" path="res://Sound/Nirvana-Something-In-The-Way-Instrumental.wav" id="5_mpvt8"]
 [ext_resource type="Texture2D" uid="uid://dispaj5pd70py" path="res://Images/Caveira.png" id="5_wcyic"]
 
 [node name="Node2D" type="Node2D"]
@@ -53,11 +52,6 @@ theme_override_fonts/font = ExtResource("4_eyj24")
 theme_override_font_sizes/font_size = 100
 text = "sair"
 metadata/_edit_use_anchors_ = true
-
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-process_mode = 3
-stream = ExtResource("5_mpvt8")
-autoplay = true
 
 [node name="Caveira" type="Sprite2D" parent="."]
 position = Vector2(164.375, 414.5)

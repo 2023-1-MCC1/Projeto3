@@ -221,18 +221,18 @@ libraries = {
 }
 
 [node name="Office011" type="Sprite2D" parent="."]
-position = Vector2(960.089, 530.5)
-scale = Vector2(4.58298, 4.58298)
+position = Vector2(491.348, 795.294)
+scale = Vector2(6.83654, 6.83654)
 texture = ExtResource("1_8h3or")
 
 [node name="Sprite0" type="Sprite2D" parent="."]
-position = Vector2(1503, 166)
-scale = Vector2(2.12304, 2.12304)
+position = Vector2(1303.13, 256.453)
+scale = Vector2(3.42334, 3.42334)
 texture = ExtResource("2_pw55u")
 
 [node name="CapturaDeTela2023-05-03074809" type="Sprite2D" parent="."]
-position = Vector2(1491.88, 248)
-scale = Vector2(0.503833, 0.494845)
+position = Vector2(1285.53, 373.71)
+scale = Vector2(0.756506, 0.743009)
 texture = ExtResource("3_pjp5g")
 
 [node name="ColorRect" type="ColorRect" parent="."]
@@ -272,6 +272,6 @@ scale = Vector2(0.0670409, 0.0670409)
 texture = ExtResource("7_3niad")
 
 [node name="Cheve1" type="Sprite2D" parent="."]
-position = Vector2(-173, 242)
+position = Vector2(-708.423, 305.706)
 scale = Vector2(4.76785, 4.76785)
 texture = ExtResource("8_h27bm")

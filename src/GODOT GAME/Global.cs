@@ -27,5 +27,6 @@ public partial class Global : Node
 	static public int CorredorCut = 0;
 	static public int AreaCorredor1 = 0;
 	static public int tribunal = 0;
-	
+	static public int time = 0;
+	static public int maze = 0;
 }
