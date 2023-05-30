@@ -8,7 +8,7 @@
 
 ## Nome do Grupo : TRACKSUIT GAMES
 
-## Integrantes: Guilherme Alves de Oliveira e Oliveira, João Pedro Lima Paulo, Vitor Utimura Locateli, Gustavo Marcello
+## Integrantes: Guilherme Alves de Oliveira e Oliveira, João Pedro Lima Paulo, Vitor Utimura Locateli, Gustavo Marcello Correa de Araujo
 
 ## Professores Orientadores: Eduardo Savino, Renata Muniz Do Nascimento, Victor Bruno Alexander Rosetti de Quiroz, Fabiano Alves Onça, Jefferson de Oliveira Silva
 
