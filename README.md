@@ -100,7 +100,8 @@ Coloque código do prompt de comnando se for necessário
 
 A cada atualização os detalhes devem ser lançados aqui.
 
-* 30/0/2023 Versão 0.9 - Jogo Finalizado, músicas estão sendo produzidas para inclusão do projeto 
+* 31/05/2023 Versão 1.0 - Músicas Incluídas, tela de gameover alterada
+* 30/05/2023 Versão 0.9 - Jogo Finalizado, músicas estão sendo produzidas para inclusão do projeto 
 
 ## 📋 Licença/License
 
@@ -113,4 +114,12 @@ Aqui estão as referências usadas no projeto.
 2. <https://github.com/gabrieldejesus/readme-model>
 3. <https://creativecommons.org/share-your-work/>
 4. <https://freesound.org/>
-5. Músicas por: <a href="https://freesound.org/people/DaveJf/sounds/616544/"> DaveJf </a> e <a href="https://freesound.org/people/DRFX/sounds/338986/"> DRFX </a> ambas com Licença CC 0.
+5. <https://freesound.org/people/TheSoundFXGuy_YT/sounds/534218/>
+6. <https://freesound.org/people/fmceretta/sounds/426699/>
+7. <https://freesound.org/people/MATRIXXX_/sounds/658288/>
+8. <https://freesound.org/people/Warped_Tension/sounds/583728/>
+9. <https://freesound.org/people/ninovisalli/sounds/457258/>
+10. <https://freesound.org/people/Warped_Tension/sounds/583731/>
+11. <https://freesound.org/people/Salsero_classic/sounds/611682/>
+12. <https://freesound.org/people/vitovsky1/sounds/400917/>
+13. <https://freesound.org/people/neilraouf/sounds/617518/>
