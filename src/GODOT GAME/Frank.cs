@@ -10,12 +10,18 @@ public partial class Frank : Godot.CharacterBody2D
 	int area1;
 	int area2;
 	
+	AudioStreamPlayer audioP;
+	AudioStreamPlayer audioP2;
+	AudioStreamPlayer audioSEG;
+	Area2D AreaOff;
+	
 	public override void _Ready(){
 		animacao = this.GetNode<AnimationPlayer>("AnimationPlayer");
 		if (Global.g>=1){this.Position = new Vector2(183,225);}
-		if (Global.PrisionCutFinished>=1){this.Position = new Vector2(1524,157);}
-		if (Global.Transition2==1){this.Position = new Vector2(278,629);}
+		if (Global.PrisionCutFinished==1){this.Position = new Vector2(1524,157);;}
+		if (Global.Transition2==1){this.Position = new Vector2(282, 630);}
 		if (Global.maze==1){this.Position = new Vector2(959,429);}
+		
 	}
 		
 
@@ -80,6 +86,7 @@ public partial class Frank : Godot.CharacterBody2D
 		{
 			GetTree().ChangeSceneToFile("res://GAMEOVER.tscn");
 		}
+		
 		
 	}
 	private void _on_area_2d_body_shape_entered(Rid body_rid, Node2D body, long body_shape_index, long local_shape_index)
@@ -163,7 +170,16 @@ private void _on_area_2d_corredor_body_entered(Node2D body)
 {
 	GetTree().ChangeSceneToFile("res://Tribunal.tscn");
 }
-
+private void _on_area_2d_corredor_vento_body_entered(Node2D body)
+{
+	audioP = this.GetParent().GetNode<AudioStreamPlayer>("Vento");
+	audioP.Play();
+}
+private void _on_tension_finished()
+{
+	audioP2 = this.GetParent().GetNode<AudioStreamPlayer>("Tension");
+	audioP2.Play();
+}
 private void _on_timer_timeout()
 {
 	Global.time++;
@@ -173,7 +189,13 @@ private void _on_area_2dfinal_body_entered(Node2D body)
 	GetTree().ChangeSceneToFile("res://Final.tscn");
 }
 
+
 }
+
+
+
+
+
 
 
 

@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://crtn1ccqgv6oq"]
+[gd_scene load_steps=6 format=3 uid="uid://crtn1ccqgv6oq"]
 
 [ext_resource type="Script" path="res://TrackSuit.cs" id="1_fy6sv"]
 [ext_resource type="Texture2D" uid="uid://23rbk76xtqq4" path="res://Images/Captura de tela 2023-04-24 120757.png" id="2_s11na"]
 [ext_resource type="FontFile" uid="uid://cirqedk3p77pt" path="res://fonte/8-bit Arcade Out.ttf" id="4_eyj24"]
+[ext_resource type="AudioStream" uid="uid://c4wdbqav4dspr" path="res://Sound/menu.mp3" id="5_neto3"]
 [ext_resource type="Texture2D" uid="uid://dispaj5pd70py" path="res://Images/Caveira.png" id="5_wcyic"]
 
 [node name="Node2D" type="Node2D"]
@@ -58,6 +59,12 @@ position = Vector2(164.375, 414.5)
 scale = Vector2(0.323772, 0.27375)
 texture = ExtResource("5_wcyic")
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_neto3")
+volume_db = -1.491
+autoplay = true
+
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
 [connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="finished" from="AudioStreamPlayer" to="." method="_on_audio_stream_player_finished"]

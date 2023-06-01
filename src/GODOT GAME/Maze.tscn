@@ -1,10 +1,11 @@
-[gd_scene load_steps=102 format=3 uid="uid://cse6e854swo71"]
+[gd_scene load_steps=103 format=3 uid="uid://cse6e854swo71"]
 
 [ext_resource type="Texture2D" uid="uid://b6hyfuoaio8h5" path="res://Images/MAze.png" id="1_k81lx"]
 [ext_resource type="PackedScene" uid="uid://bac6dntp0bm2u" path="res://Frank.tscn" id="2_12kgv"]
 [ext_resource type="Script" path="res://Frank.cs" id="3_bj3fu"]
 [ext_resource type="Script" path="res://RichTextLabelTimer.cs" id="4_4y7ys"]
 [ext_resource type="FontFile" uid="uid://bvx7c0t5ocmd7" path="res://fonte/Fipps-Regular.otf" id="4_h6imd"]
+[ext_resource type="AudioStream" uid="uid://bj6g6pf3f0n8f" path="res://Sound/maze.wav" id="6_iu7n6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8s1mn"]
 size = Vector2(34, 1146)
@@ -724,6 +725,11 @@ text = "    VOCÊ TEM 45 SEGUNDOS
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DFINAL"]
 position = Vector2(132, 58)
 shape = SubResource("RectangleShape2D_a5j1v")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_iu7n6")
+volume_db = -5.622
+autoplay = true
 
 [connection signal="timeout" from="Timer" to="CharacterBody2D" method="_on_timer_timeout"]
 [connection signal="body_entered" from="Area2DFINAL" to="CharacterBody2D" method="_on_area_2dfinal_body_entered"]

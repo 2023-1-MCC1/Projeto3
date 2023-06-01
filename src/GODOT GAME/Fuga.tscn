@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://civuorcy881yj"]
+[gd_scene load_steps=8 format=3 uid="uid://civuorcy881yj"]
 
 [ext_resource type="Script" path="res://Fuga.cs" id="1_8lcyr"]
 [ext_resource type="Texture2D" uid="uid://fjohm03o8wux" path="res://Images/map.png" id="1_ajyeh"]
 [ext_resource type="Texture2D" uid="uid://pc8doq2f2ru4" path="res://Sprite/AlinhadoEsquerdaFrank_strip9.png" id="2_7kdtn"]
+[ext_resource type="AudioStream" uid="uid://dlpw3vtxpm8qg" path="res://Sound/cutsceneIlha.wav" id="4_e5xo7"]
 
 [sub_resource type="Animation" id="Animation_d4g8w"]
 resource_name = "Fuga"
@@ -174,5 +175,10 @@ scale = Vector2(4.035, 4.035)
 texture = ExtResource("2_7kdtn")
 hframes = 9
 frame = 1
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_e5xo7")
+volume_db = -5.622
+autoplay = true
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

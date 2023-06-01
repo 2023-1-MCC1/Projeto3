@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://b67r0vbrj117i"]
+[gd_scene load_steps=14 format=3 uid="uid://b67r0vbrj117i"]
 
 [ext_resource type="Texture2D" uid="uid://b4f8ja1t04nub" path="res://Images/office011.png" id="1_hs0ly"]
 [ext_resource type="Script" path="res://Transicao.cs" id="1_i706l"]
@@ -9,6 +9,7 @@
 [ext_resource type="Script" path="res://RichTextLabel5.cs" id="6_62xre"]
 [ext_resource type="FontFile" uid="uid://bvx7c0t5ocmd7" path="res://fonte/Fipps-Regular.otf" id="7_k1b3p"]
 [ext_resource type="Texture2D" uid="uid://bq4b1lbqe2hm4" path="res://Images/sta.png" id="8_iwbe6"]
+[ext_resource type="AudioStream" uid="uid://k7svwanceeoy" path="res://Sound/Seguranças.wav" id="10_cwx8e"]
 
 [sub_resource type="Animation" id="Animation_r6kgd"]
 length = 0.001
@@ -308,5 +309,10 @@ position = Vector2(361, 978)
 rotation = 1.5708
 scale = Vector2(0.0670409, 0.0670409)
 texture = ExtResource("8_iwbe6")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_cwx8e")
+volume_db = -6.558
+autoplay = true
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

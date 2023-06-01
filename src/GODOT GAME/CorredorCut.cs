@@ -20,6 +20,7 @@ public partial class CorredorCut : Node2D
 	private void _on_animation_player_animation_finished(StringName anim_name)
 {
 	c++;
+	Global.CorredorPosition++;
 }
 }
 

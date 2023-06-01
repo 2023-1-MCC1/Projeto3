@@ -1,8 +1,9 @@
-[gd_scene load_steps=12 format=3 uid="uid://q5jwy3joo6wv"]
+[gd_scene load_steps=13 format=3 uid="uid://q5jwy3joo6wv"]
 
 [ext_resource type="Texture2D" uid="uid://by43kfnqfhx3m" path="res://Images/Tribunal.jpg" id="1_62fjs"]
 [ext_resource type="Script" path="res://TribunalFuga.cs" id="1_ecgdb"]
 [ext_resource type="Texture2D" uid="uid://dnktenhpdadx7" path="res://Sprite/Márcia.png" id="2_gkp3y"]
+[ext_resource type="AudioStream" uid="uid://bgoha8k8twbob" path="res://Sound/JumpScare.wav" id="2_njcv7"]
 [ext_resource type="Texture2D" uid="uid://26e2yoslgmhl" path="res://Images/Captura de tela 2023-05-26 185052.png" id="3_ni7o5"]
 [ext_resource type="Texture2D" uid="uid://dibuc5uulv1x3" path="res://Sprite/spriteAlinhado_strip9.png" id="4_bi3cm"]
 [ext_resource type="Texture2D" uid="uid://in7w043tlb1f" path="res://Sprite/Seg1/Esquerda/EsquerdaSeg1.png" id="5_df8yy"]
@@ -227,6 +228,30 @@ tracks/17/keys = {
 "update": 1,
 "values": [1]
 }
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("AudioStreamPlayer:stream")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_njcv7")]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("AudioStreamPlayer:playing")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
 
 [sub_resource type="Animation" id="Animation_d0r4u"]
 resource_name = "Tribunal Fuga"
@@ -447,6 +472,30 @@ tracks/17/keys = {
 "update": 1,
 "values": [1, 2, 3, 4, 5, 6, 7, 8, 1, 2]
 }
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("AudioStreamPlayer:stream")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(6),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_njcv7")]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("AudioStreamPlayer:playing")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(3.4),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_es0fx"]
 _data = {
@@ -506,5 +555,9 @@ scale = Vector2(2.329, 2.329)
 texture = ExtResource("7_k1o4w")
 hframes = 9
 frame = 1
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_njcv7")
+volume_db = -16.421
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

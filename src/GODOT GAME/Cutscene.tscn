@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://b4t4n2d1qjm7"]
+[gd_scene load_steps=9 format=3 uid="uid://b4t4n2d1qjm7"]
 
 [ext_resource type="Script" path="res://Cutscene.cs" id="1_m5tra"]
 [ext_resource type="Texture2D" uid="uid://bm7gt64abm1h" path="res://Images/Ilha.png" id="2_2v1w2"]
@@ -7,6 +7,7 @@
 [ext_resource type="Script" path="res://RichTextLabel.cs" id="5_8wd6i"]
 [ext_resource type="FontFile" uid="uid://83bty0s0ovon" path="res://fonte/Retro Gaming.ttf" id="5_voamc"]
 [ext_resource type="Texture2D" uid="uid://bq4b1lbqe2hm4" path="res://Images/sta.png" id="7_bh6sg"]
+[ext_resource type="AudioStream" uid="uid://dlpw3vtxpm8qg" path="res://Sound/cutsceneIlha.wav" id="8_j4r5p"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_m5tra")
@@ -62,4 +63,9 @@ rotation = 1.5708
 scale = Vector2(0.0670409, 0.0670409)
 texture = ExtResource("7_bh6sg")
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_j4r5p")
+autoplay = true
+
 [connection signal="pressed" from="Button" to="Ilha" method="_on_button_pressed"]
+[connection signal="finished" from="AudioStreamPlayer" to="." method="_on_audio_stream_player_finished"]

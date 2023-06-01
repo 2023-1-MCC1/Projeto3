@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://dgkexu16c0y85"]
+[gd_scene load_steps=14 format=3 uid="uid://dgkexu16c0y85"]
 
 [ext_resource type="Script" path="res://BossCUT.cs" id="1_e1bm4"]
 [ext_resource type="Texture2D" uid="uid://b4f8ja1t04nub" path="res://Images/office011.png" id="1_lto7o"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://c35ly041m87jj" path="res://Sprite/alinhadoD_strip9.png" id="8_ag8cq"]
 [ext_resource type="FontFile" uid="uid://bvx7c0t5ocmd7" path="res://fonte/Fipps-Regular.otf" id="8_wghgt"]
 [ext_resource type="Texture2D" uid="uid://bq4b1lbqe2hm4" path="res://Images/sta.png" id="9_cg1eg"]
+[ext_resource type="AudioStream" uid="uid://3ekpbjvyd6xf" path="res://Sound/office.mp3" id="10_7350h"]
 
 [sub_resource type="Animation" id="Animation_lesmk"]
 resource_name = "BossCUT"
@@ -404,5 +405,10 @@ position = Vector2(361, 978)
 rotation = 1.5708
 scale = Vector2(0.0670409, 0.0670409)
 texture = ExtResource("9_cg1eg")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_7350h")
+volume_db = -20.621
+autoplay = true
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

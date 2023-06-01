@@ -1,11 +1,23 @@
-[gd_scene load_steps=3 format=3 uid="uid://e8nkcik18hro"]
+[gd_scene load_steps=5 format=3 uid="uid://e8nkcik18hro"]
 
 [ext_resource type="Script" path="res://FrankCUT.cs" id="1_pe2vl"]
+[ext_resource type="AudioStream" uid="uid://3ekpbjvyd6xf" path="res://Sound/office.mp3" id="3_tysnw"]
+[ext_resource type="AudioStream" uid="uid://dlpw3vtxpm8qg" path="res://Sound/cutsceneIlha.wav" id="4_6bkyu"]
 [ext_resource type="PackedScene" uid="uid://iypkpcamk2ly" path="res://animation_player.tscn" id="4_jkobs"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_pe2vl")
 
 [node name="AnimationPlayer" parent="." instance=ExtResource("4_jkobs")]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_tysnw")
+volume_db = -20.613
+autoplay = true
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_6bkyu")
+volume_db = -1.874
+autoplay = true
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

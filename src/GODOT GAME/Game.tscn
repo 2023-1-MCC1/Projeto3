@@ -1,4 +1,4 @@
-[gd_scene load_steps=88 format=3 uid="uid://bubhev3o318r4"]
+[gd_scene load_steps=89 format=3 uid="uid://bubhev3o318r4"]
 
 [ext_resource type="Texture2D" uid="uid://bufsd3843kily" path="res://Images/office01.png" id="1_7epnc"]
 [ext_resource type="Texture2D" uid="uid://vi5ron1fmytl" path="res://Images/6.png" id="2_om5lj"]
@@ -33,6 +33,8 @@
 [ext_resource type="Texture2D" uid="uid://dhn6awqpu8r22" path="res://Images/Captura de tela 2023-05-03 0748092.png" id="30_r2vce"]
 [ext_resource type="Texture2D" uid="uid://vumiqnc7gsmo" path="res://Images/3.png" id="31_gefhc"]
 [ext_resource type="Texture2D" uid="uid://cbd5qcs6fnuxl" path="res://Images/4.png" id="32_lrmg5"]
+[ext_resource type="AudioStream" uid="uid://k7svwanceeoy" path="res://Sound/Seguranças.wav" id="35_nv00o"]
+[ext_resource type="AudioStream" uid="uid://3ekpbjvyd6xf" path="res://Sound/office.mp3" id="35_xrn86"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c6054"]
 size = Vector2(524, 23)
@@ -88,11 +90,8 @@ size = Vector2(45, 411)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_aaocg"]
 size = Vector2(76, 73)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_l0jy4"]
-size = Vector2(296.5, 38)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_irl5r"]
-size = Vector2(340, 34)
+size = Vector2(813, 34)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mv8bw"]
 size = Vector2(37.25, 439)
@@ -344,12 +343,8 @@ shape = SubResource("RectangleShape2D_42krv")
 position = Vector2(1323, 969.5)
 shape = SubResource("RectangleShape2D_aaocg")
 
-[node name="CollisionShape2D19" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(1189.25, 1056)
-shape = SubResource("RectangleShape2D_l0jy4")
-
 [node name="CollisionShape2D20" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(723, 1057)
+position = Vector2(959.5, 1057)
 shape = SubResource("RectangleShape2D_irl5r")
 
 [node name="CollisionShape2D21" type="CollisionShape2D" parent="StaticBody2D"]
@@ -633,6 +628,15 @@ script = ExtResource("20_40tqs")
 position = Vector2(970.5, 645.5)
 shape = SubResource("RectangleShape2D_gvn3b")
 disabled = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("35_xrn86")
+volume_db = -19.676
+autoplay = true
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("35_nv00o")
+volume_db = -11.247
 
 [connection signal="body_shape_entered" from="Area2D" to="CharacterBody2D" method="_on_area_2d_body_shape_entered"]
 [connection signal="body_entered" from="Area2DEntrega1" to="CharacterBody2D" method="_on_area_2d_entrega_1_body_entered"]

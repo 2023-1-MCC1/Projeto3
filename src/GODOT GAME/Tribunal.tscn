@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://broqbq3t1i0el"]
+[gd_scene load_steps=14 format=3 uid="uid://broqbq3t1i0el"]
 
 [ext_resource type="Texture2D" uid="uid://by43kfnqfhx3m" path="res://Images/Tribunal.jpg" id="1_61t04"]
 [ext_resource type="Script" path="res://Tribunal.cs" id="1_ghiq4"]
@@ -9,6 +9,7 @@
 [ext_resource type="Script" path="res://RichTextLabel7.cs" id="6_lrd3i"]
 [ext_resource type="Texture2D" uid="uid://bq4b1lbqe2hm4" path="res://Images/sta.png" id="7_ugfgf"]
 [ext_resource type="FontFile" uid="uid://bvx7c0t5ocmd7" path="res://fonte/Fipps-Regular.otf" id="8_nl8xc"]
+[ext_resource type="AudioStream" uid="uid://bgkhip26i36ij" path="res://Sound/Tension2.wav" id="10_0wmwq"]
 
 [sub_resource type="Animation" id="Animation_ydory"]
 length = 0.001
@@ -305,5 +306,10 @@ offset_bottom = 279.0
 theme_override_fonts/font = ExtResource("8_nl8xc")
 theme_override_font_sizes/font_size = 12
 text = "ESPAÇO PARA PULAR"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_0wmwq")
+volume_db = -0.936
+autoplay = true
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

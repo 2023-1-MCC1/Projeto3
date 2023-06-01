@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://p65xnu7l4usw"]
+[gd_scene load_steps=18 format=3 uid="uid://p65xnu7l4usw"]
 
 [ext_resource type="Texture2D" uid="uid://b4f8ja1t04nub" path="res://Images/office011.png" id="1_4243g"]
 [ext_resource type="Script" path="res://Prision.cs" id="1_usdkv"]
@@ -12,6 +12,8 @@
 [ext_resource type="Script" path="res://RichTextLabel4.cs" id="8_8c750"]
 [ext_resource type="Texture2D" uid="uid://cblpro0w6f7kj" path="res://Images/Captura de tela 2023-05-03 074809.png" id="8_k005d"]
 [ext_resource type="Texture2D" uid="uid://bq4b1lbqe2hm4" path="res://Images/sta.png" id="9_avo0k"]
+[ext_resource type="AudioStream" uid="uid://k7svwanceeoy" path="res://Sound/Seguranças.wav" id="13_7jik5"]
+[ext_resource type="AudioStream" uid="uid://3ekpbjvyd6xf" path="res://Sound/office.mp3" id="14_c85xt"]
 
 [sub_resource type="Animation" id="Animation_vngjg"]
 resource_name = "Prisao"
@@ -593,5 +595,15 @@ position = Vector2(353, 979)
 rotation = 1.5708
 scale = Vector2(0.0670409, 0.0670409)
 texture = ExtResource("9_avo0k")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("13_7jik5")
+volume_db = -11.247
+autoplay = true
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("14_c85xt")
+volume_db = -23.424
+autoplay = true
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
