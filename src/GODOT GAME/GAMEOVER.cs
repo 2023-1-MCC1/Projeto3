@@ -47,6 +47,7 @@ private void _on_button_2_pressed()
 	Global.AreaCorredor1 = 0;
 	Global.tribunal = 0;
 	Global.time = 0;
+	Global.maze = 0;
 	GetTree().ChangeSceneToFile("res://TrackSuit.tscn");
 }
 }
