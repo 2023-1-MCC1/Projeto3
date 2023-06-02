@@ -12,7 +12,7 @@ public partial class Prision : Node2D
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
-		if(Global.prisao>=4 && x==1)
+		if(Global.prisao>=5 && x==1)
 		{
 			GetTree().ChangeSceneToFile("res://Game.tscn");
 		}

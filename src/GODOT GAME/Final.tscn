@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bgtaf8ma7ns82"]
+[gd_scene load_steps=5 format=3 uid="uid://bgtaf8ma7ns82"]
 
 [ext_resource type="Script" path="res://Final.cs" id="1_4bu74"]
 [ext_resource type="FontFile" uid="uid://bvx7c0t5ocmd7" path="res://fonte/Fipps-Regular.otf" id="2_1x35u"]
 [ext_resource type="FontFile" uid="uid://83bty0s0ovon" path="res://fonte/Retro Gaming.ttf" id="3_bofll"]
+[ext_resource type="AudioStream" uid="uid://bj6g6pf3f0n8f" path="res://Sound/maze.wav" id="4_yflpn"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_4bu74")
@@ -21,7 +22,7 @@ offset_right = 1782.0
 offset_bottom = 1090.0
 theme_override_fonts/font = ExtResource("2_1x35u")
 theme_override_font_sizes/font_size = 49
-text = "          FRANK FUGIU DOS GUARDAS
+text = "             FRANK FUGIU DOS GUARDAS
 
 PORÉM SEU DESTINO AINDA NÃO CHEGOU AO FIM
 "
@@ -35,4 +36,10 @@ theme_override_fonts/font = ExtResource("3_bofll")
 theme_override_font_sizes/font_size = 61
 text = "CRÉDITOS"
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_yflpn")
+volume_db = -5.622
+autoplay = true
+
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="finished" from="AudioStreamPlayer" to="." method="_on_audio_stream_player_finished"]

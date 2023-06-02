@@ -31,7 +31,7 @@ private void _on_button_3_pressed()
 private void _on_audio_stream_player_finished()
 {
 	x = this.GetNode<AudioStreamPlayer>("AudioStreamPlayer");
-	x.Play(0);
+	x.Play();
 }
 
 }
