@@ -100,8 +100,9 @@ Coloque código do prompt de comnando se for necessário
 
 A cada atualização os detalhes devem ser lançados aqui.
 
-* 31/05/2023 Versão 1.0 - Músicas Incluídas, tela de gameover alterada
-* 30/05/2023 Versão 0.9 - Jogo Finalizado, músicas estão sendo produzidas para inclusão do projeto 
+* 01/06/2023 Versão 1.0 - Problemas de Desempenho corrigidos.
+* 31/05/2023 Versão 1.0 - Músicas Incluídas, tela de gameover alterada.
+* 30/05/2023 Versão 0.9 - Jogo Finalizado, músicas estão sendo produzidas para inclusão do projeto.
 
 ## 📋 Licença/License
 
