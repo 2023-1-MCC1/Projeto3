@@ -125,3 +125,4 @@ Aqui estão as referências usadas no projeto.
 11. <https://freesound.org/people/Salsero_classic/sounds/611682/>
 12. <https://freesound.org/people/vitovsky1/sounds/400917/>
 13. <https://freesound.org/people/neilraouf/sounds/617518/>
+14. <https://www.bing.com/images/create>
