@@ -126,3 +126,4 @@ Aqui estão as referências usadas no projeto.
 12. <https://freesound.org/people/vitovsky1/sounds/400917/>
 13. <https://freesound.org/people/neilraouf/sounds/617518/>
 14. <https://www.bing.com/images/create>
+15. <A href="https://github.com/sanderfrenken/Universal-LPC-Spritesheet-Character-Generator/blob/master/README.md">Sprite Sheet Generator Authors</a>
