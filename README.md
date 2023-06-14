@@ -87,7 +87,9 @@ Descreva como instalar todas as dependências para desenvolvimento e como rodar 
 
 Para abrir este projeto você necessita das seguintes ferramentas:
 
--<a href="https://godotengine.org/download">GODOT</a>, intale a versão 4.0.2 PARA O CORRETO FUNCIONAMENTO.
+-<a href="https://dotnet.microsoft.com/pt-br/download/dotnet/thank-you/sdk-6.0.410-windows-x64-installer">DOTNET 6.0</a>, é necessário PARA O CORRETO FUNCIONAMENTO.
+
+-<a href="https://github.com/2023-1-MCC1/Projeto3/blob/main/documentos/Godot_v4.0.2-stable_mono_win64.zip">GODOT</a>, intale a versão 4.0.2 PARA O CORRETO FUNCIONAMENTO, versão correta do GODOT na na pasta DOCUMENTOS do projeto.
 
 ```sh
 make install
