@@ -116,6 +116,9 @@ Aqui estão as referências usadas no projeto.
 1. <https://github.com/iuricode/readme-template>
 2. <https://github.com/gabrieldejesus/readme-model>
 3. <https://creativecommons.org/share-your-work/>
+<p align="center">
+  EFEITOR SONOROS UTILIZADOS
+  
 4. <https://freesound.org/>
 5. <https://freesound.org/people/TheSoundFXGuy_YT/sounds/534218/>
 6. <https://freesound.org/people/fmceretta/sounds/426699/>
@@ -126,5 +129,23 @@ Aqui estão as referências usadas no projeto.
 11. <https://freesound.org/people/Salsero_classic/sounds/611682/>
 12. <https://freesound.org/people/vitovsky1/sounds/400917/>
 13. <https://freesound.org/people/neilraouf/sounds/617518/>
+  </p>
+<p align="center">
+  GERADOR DE IMAGENS POR MEIO DA INTELIGÊNCIA ARTIFICIAL
+  
+  
 14. <https://www.bing.com/images/create>
-15. <A href="https://github.com/sanderfrenken/Universal-LPC-Spritesheet-Character-Generator/blob/master/README.md">Sprite Sheet Generator Authors</a>
+  </p>
+<p align="center">
+  GERADOR DE SPRITE SHEET (PERSONAGEM E NPC's)
+  
+16. <A href="https://github.com/sanderfrenken/Universal-LPC-Spritesheet-Character-Generator/blob/master/README.md">Sprite Sheet Generator Authors</a>
+  </p>
+<p align="center">
+   FONTES USADAS
+  
+17. <https://www.dafont.com/pt/8-bit-pusab.font>
+18. <https://www.dafont.com/pt/retro-gaming.font>
+19. <https://www.dafont.com/pt/8-bit-arcade.font>
+20. <https://www.dafont.com/pt/fipps.font>
+  </p>
