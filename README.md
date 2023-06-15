@@ -15,8 +15,7 @@
 ## Descrição
 
 <p align="center">
-<img src="https://pix4free.org/assets/library/2021-01-20/originals/game.jpg" alt="NOME DO JOGO" border="0">
-  Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
+<img src="https://raw.githubusercontent.com/2023-1-MCC1/Projeto3/main/imagens/Ilha.png" alt="THE SOCIETY" border="0">
 </p>
 
 
@@ -88,7 +87,9 @@ Descreva como instalar todas as dependências para desenvolvimento e como rodar 
 
 Para abrir este projeto você necessita das seguintes ferramentas:
 
--<a href="https://godotengine.org/download">GODOT</a>, intale a versão 4.0.2 PARA O CORRETO FUNCIONAMENTO.
+-<a href="https://dotnet.microsoft.com/pt-br/download/dotnet/thank-you/sdk-6.0.410-windows-x64-installer">DOTNET 6.0</a>, é necessário PARA O CORRETO FUNCIONAMENTO.
+
+-<a href="https://github.com/2023-1-MCC1/Projeto3/blob/main/documentos/Godot_v4.0.2-stable_mono_win64.zip">GODOT</a>, intale a versão 4.0.2 PARA O CORRETO FUNCIONAMENTO, versão correta do GODOT na na pasta DOCUMENTOS do projeto.
 
 ```sh
 make install
@@ -126,3 +127,4 @@ Aqui estão as referências usadas no projeto.
 12. <https://freesound.org/people/vitovsky1/sounds/400917/>
 13. <https://freesound.org/people/neilraouf/sounds/617518/>
 14. <https://www.bing.com/images/create>
+15. <A href="https://github.com/sanderfrenken/Universal-LPC-Spritesheet-Character-Generator/blob/master/README.md">Sprite Sheet Generator Authors</a>
